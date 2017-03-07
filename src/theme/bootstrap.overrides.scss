@@ -2,6 +2,7 @@
  * Override Bootstrap styles that you can't modify via variables here.
  *
  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
 .navbar-brand {
   position: relative;
@@ -13,4 +14,30 @@
 .navbar-default .navbar-nav > .active > a:focus {
   color: #33e0ff;
   background-color: transparent;
+}
+
+.navbar-light .navbar-nav > a {
+  color: black;
+  background-color: transparent;
+}
+
+.navbar-static-top {
+	padding-top: 20px;
+
+    .nav > li > a {
+      color: black;
+    }  
+  
+}
+
+h2 {
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+p.lead {
+	font-size: 20px;
+	font-weight: 300;	
 }
