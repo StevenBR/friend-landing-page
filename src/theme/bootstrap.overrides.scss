@@ -14,3 +14,17 @@
   color: #33e0ff;
   background-color: transparent;
 }
+
+.navbar-light .navbar-nav > a {
+  color: black;
+  background-color: transparent;
+}
+
+.navbar-static-top {
+	padding-top: 20px;
+
+    .nav > li > a {
+      color: black;
+    }  
+  
+}
