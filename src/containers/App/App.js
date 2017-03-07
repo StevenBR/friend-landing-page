@@ -8,7 +8,6 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/modules/auth';
-import { InfoBar } from 'components';
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
@@ -67,9 +66,9 @@ export default class App extends Component {
         <Navbar bsStyle="light" staticTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <IndexLink to="/" activeStyle={{color: '#33e0ff'}}>
+              <IndexLink to="/">
                 <div className={styles.brand}/>
-                <span>{config.app.title}</span>
+                <b>squareonelabs</b>
               </IndexLink>
             </Navbar.Brand>
             <Navbar.Toggle/>
@@ -112,14 +111,6 @@ export default class App extends Component {
 
         <div className={styles.appContent}>
           {this.props.children}
-        </div>
-        <InfoBar/>
-
-        <div className="well text-center">
-          Have questions? Ask for help <a
-          href="https://github.com/erikras/react-redux-universal-hot-example/issues"
-          target="_blank">on Github</a> or in the <a
-          href="https://discord.gg/0ZcbPKXt5bZZb1Ko" target="_blank">#react-redux-universal</a> Discord channel.
         </div>
       </div>
     );
