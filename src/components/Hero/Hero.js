@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NumberCaptureForm } from 'components';
-import logo from '../../../static/twilio-logo.png';
+import Logo from '../../../static/twilio-logo.png';
 
 export default class Hero extends Component {
 	render () {
@@ -21,7 +21,7 @@ export default class Hero extends Component {
 			  <div className={`${styles.messagesRow} text-center`}>
 		       	<h2>7,421,234</h2>
 		       	<p className="lead">Messages Processed</p>
-		       	<span>Powered by </span><img src={logo} />
+		       	<span>Powered by </span><img src={Logo} />
   			  </div>
   			  <br />
   			  <div className="text-center">
