@@ -13,3 +13,5 @@ export SurveyForm from './SurveyForm/SurveyForm';
 export WidgetForm from './WidgetForm/WidgetForm';
 export Hero from './Hero/Hero';
 export NumberCaptureForm from './NumberCaptureForm/NumberCaptureForm';
+export Logos from './Logos/Logos';
+export Logo from './Logo/Logo';
