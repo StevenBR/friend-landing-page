@@ -76,6 +76,7 @@ export default class App extends Component {
 
           <Navbar.Collapse eventKey={0}>
             <Nav navbar pullRight>
+              {/*
               {user && <LinkContainer to="/chat">
                 <NavItem eventKey={1}>Chat</NavItem>
               </LinkContainer>}
@@ -89,9 +90,7 @@ export default class App extends Component {
               <LinkContainer to="/pagination">
                 <NavItem eventKey={4}>Pagination</NavItem>
               </LinkContainer>
-              <LinkContainer to="/about">
-                <NavItem eventKey={5}>About Us</NavItem>
-              </LinkContainer>
+              
               <LinkContainer to="/hello">
                 <NavItem eventKey={99}>Hello</NavItem>
               </LinkContainer>
@@ -106,6 +105,16 @@ export default class App extends Component {
                   Logout
                 </NavItem>
               </LinkContainer>}
+            */}
+              <LinkContainer to="/about">
+                <NavItem eventKey={5}>About Us</NavItem>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <NavItem eventKey={5}>Help</NavItem>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <NavItem eventKey={5}>Blog</NavItem>
+              </LinkContainer>
             </Nav>
             {user &&
             <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
