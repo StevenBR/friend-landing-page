@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { NumberCaptureForm, Logos } from 'components';
-import TwilioLogo from '../../../static/twilio-logo.png';
+import { NumberCaptureForm } from 'components';
 
 export default class Hero extends Component {
 	render () {
@@ -18,17 +17,7 @@ export default class Hero extends Component {
 			    </div>
 		      	<div className={styles.device}></div>
 			  </div>
-			  <div className={`${styles.messagesRow} text-center`}>
-		       	<h2>7,421,234</h2>
-		       	<p className="lead">Messages Processed</p>
-		       	<span>Powered by </span><img src={TwilioLogo} />
-  			  </div>
-  			  <br />
-  			  <div className="text-center">
-	  			  <h2>Welcome to Conversational Everything</h2>
-	  			  <p className="lead">We’re building the tools to allow you to communicate with businesses, experts<br /> and organizations in the easiest way possible.</p>
-  			  </div>
-  			  <Logos />
+			  
 			</div>
 		);
 	}

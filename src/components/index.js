@@ -15,3 +15,6 @@ export Hero from './Hero/Hero';
 export NumberCaptureForm from './NumberCaptureForm/NumberCaptureForm';
 export Logos from './Logos/Logos';
 export Logo from './Logo/Logo';
+export Clients from './Clients/Clients';
+export FeatureImage from './FeatureImage/FeatureImage';
+export FeatureImageText from './FeatureImageText/FeatureImageText';
