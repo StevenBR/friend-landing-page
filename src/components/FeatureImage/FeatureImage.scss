@@ -1,0 +1,16 @@
+.featureImage {
+	/*background: url("../../../static/device-row-1.png");*/
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	.col-sm-6 {
+		display: inline-block;
+	}
+
+	img {
+		position: absolute;
+		right: -1400px;
+	}
+}
