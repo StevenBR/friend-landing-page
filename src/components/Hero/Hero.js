@@ -13,11 +13,11 @@ export default class Hero extends Component {
 			      <p>Enter your number to begin</p>
 			      <NumberCaptureForm />
 			      <br />
-			      <p>or send a text to <b className="text-success">+1 650-600-9614</b></p>
-			    <div className={styles.device}></div>
-			      
+			      <p>or send a text to <b className="text-success">+1 650-600-9614</b></p>			      
 			    </div>
+		      	<div className={styles.device}></div>
 			  </div>
+			  
 			</div>
 		);
 	}

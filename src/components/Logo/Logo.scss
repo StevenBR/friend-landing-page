@@ -1,0 +1,28 @@
+.logo {
+    margin-bottom: 20px;
+	filter: grayscale(100%);
+
+    
+    label {
+    	margin-top: 10px;
+    	font-weight: normal;
+    }
+    img {
+    	width: 90px;
+    }
+}
+
+.logo:hover {
+
+	cursor: pointer;
+	filter: none;
+	label {
+		font-weight: bold;
+	}
+}
+
+.noFilter {
+	
+		filter: none;
+	
+}
