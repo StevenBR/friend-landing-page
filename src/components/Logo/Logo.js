@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 export default class Logo extends Component {
 	render () {
-		const styles = require ("./logo.scss");
+		const styles = require ("./Logo.scss");
 		return (
 			<div className={`${styles.logo} ${this.props.noFilter?styles.noFilter:""} col-sm-3`}>
 	  			<div className="text-center">
