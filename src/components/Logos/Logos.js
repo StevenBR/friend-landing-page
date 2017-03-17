@@ -12,7 +12,7 @@ export default class Logos extends Component {
 		const noFilter = true;
 		return (
 			<div className="container">
-				<div className="row">
+				<div className="row" style={{paddingBottom: 20}}>
 					<Logo
 					src={Friend}
 					label="Hello, Friend"
