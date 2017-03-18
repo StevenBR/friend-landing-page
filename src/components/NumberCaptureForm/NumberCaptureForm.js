@@ -9,7 +9,7 @@ export default class NumberCaptureForm extends Component {
 					<div className="form-group">
 						<input type="text" placeholder="(555) 555-5555" className="form-control"/>
 					</div>
-					<button className="btn btn-gradient">TEXT ME</button>					
+					<button className={`btn btn-${this.props.buttonType}`}>TEXT ME</button>					
 				</form>
 			</div>
 		);

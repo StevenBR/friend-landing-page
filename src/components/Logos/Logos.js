@@ -8,42 +8,65 @@ import Lingo from '../../../static/lingo.png';
 import Fitness from '../../../static/fitness.png';
 
 export default class Logos extends Component {
+
+	state = {
+		logos: [
+			{
+				id: 1,
+				src: Friend,
+				label: "Hello, Friend",
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+			},
+			{
+				id: 2,
+				src: Auto,
+				label: "Hello, Auto",
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+			},
+			{
+				id: 3,
+				src: Home,
+				label: "Hello, Home",
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+			},
+			{
+				id: 4,
+				src: Lingo,
+				label: "Hello, Lingo",
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+			},
+			{
+				id: 5,
+				src: Fitness,
+				label: "Hello, Fitness",
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+			},
+			{
+				id: 6,
+				src: ComingSoon,
+				label: "Coming Soon",
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				noFilter: true
+			}
+		]
+	}
+
 	render () {
 		const noFilter = true;
 		return (
 			<div className="container">
 				<div className="row" style={{paddingBottom: 20}}>
-					<Logo
-					src={Friend}
-					label="Hello, Friend"
-					text="Phasellus condimentum odio elit, in placerat augue congue ac."
-					/>
-					<Logo
-					src={Auto}
-					label="Hello, Auto"
-					text="Phasellus condimentum odio elit, in placerat augue congue ac."
-					/>
-					<Logo
-					src={Home}
-					label="Hello, Home"
-					text="Phasellus condimentum odio elit, in placerat augue congue ac."
-					/>
-					<Logo
-					src={Lingo}
-					label="Hello, Lingo"
-					text="Phasellus condimentum odio elit, in placerat augue congue ac."
-					/>
-					<Logo
-					src={Fitness}
-					label="Hello, Fitness"
-					text="Phasellus condimentum odio elit, in placerat augue congue ac."
-					/>		
-					<Logo
-					src={ComingSoon}
-					label="Coming soon..."
-					noFilter={noFilter}
-					
-					/>			
+					{this.state.logos.map(logo => {
+						return (
+							<Logo
+							key={logo.id}
+							src={logo.src}
+							label={logo.label}
+							text={logo.text}
+							noFilter={logo.noFilter}
+							/>
+						);
+					})}		
 				</div>
 			</div>
 		);
