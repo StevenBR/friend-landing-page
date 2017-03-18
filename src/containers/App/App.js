@@ -11,6 +11,8 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
+import {Modal} from 'components';
+
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -124,6 +126,9 @@ export default class App extends Component {
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+
+        <Modal />
+
       </div>
     );
   }
