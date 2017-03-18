@@ -18,3 +18,5 @@ export Logo from './Logo/Logo';
 export Clients from './Clients/Clients';
 export FeatureImage from './FeatureImage/FeatureImage';
 export FeatureImageText from './FeatureImageText/FeatureImageText';
+export GradientRow from './GradientRow/GradientRow';
+export Footer from './Footer/Footer';
