@@ -2,8 +2,8 @@
     margin-bottom: 40px;
 	filter: grayscale(100%);
 
-    
     label {
+		cursor: pointer;
     	margin-top: 10px;
     	font-weight: normal;
     }
@@ -13,9 +13,9 @@
 }
 
 .logo:hover {
-
-	cursor: pointer;
+	cursor: pointer;    	
 	filter: none;
+	
 	label {
 		font-weight: bold;
 	}
