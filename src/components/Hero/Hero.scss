@@ -1,8 +1,9 @@
 .hero {
+	.device {
+		height: 400px;
+		background: url("../../../static/hero-device.png") no-repeat center bottom;
+	}
+
+	
 }
 
-.device {
-	/*width: 600px;*/
-	height: 400px;
-	background: url("../../../static/hero-device.png") no-repeat center bottom;
-}
