@@ -27,6 +27,7 @@ export default class Home extends Component {
 			  <h2>Welcome to Conversational Everything</h2>
 			  <p className="lead">We’re building the tools to allow you to communicate with businesses, experts<br /> and organizations in the easiest way possible.</p>
 		  </div>
+		  <br />
 		  <Logos />
 
 		  <Clients />
