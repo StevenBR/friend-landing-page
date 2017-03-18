@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import AutoLogo from '../../../static/hello-auto.png';
 
 export default class Logo extends Component {
 	state = {

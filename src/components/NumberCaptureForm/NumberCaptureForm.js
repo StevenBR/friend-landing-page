@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MaskedInput from 'react-text-mask';
+
 
 export default class NumberCaptureForm extends Component {
 	render () {
@@ -7,7 +9,12 @@ export default class NumberCaptureForm extends Component {
 			<div className={styles.numberCaptureForm}>
 				<form action="" className="form-inline">
 					<div className="form-group">
-						<input type="text" placeholder="(555) 555-5555" className="form-control"/>
+						<MaskedInput
+						mask={['(',/[1-9]/,/\d/,/\d/,')',' ',/\d/,/\d/,/\d/,'-',/\d/,/\d/,/\d/,/\d/]} 
+						placeholder="(555) 555-5555"
+						className="form-control"
+						guide={false}
+						/>
 					</div>
 					<button className={`btn btn-${this.props.buttonType}`}>TEXT ME</button>					
 				</form>
