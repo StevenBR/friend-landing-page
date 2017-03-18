@@ -8,9 +8,12 @@ export default class Modal extends Component {
 			<div className={styles.modal}>
 				<i className="fa fa-times"></i>
 				<div className={"panel panel-default " + styles.modalBox}>
-					<div className="panel-body">
+					<div className="panel-body text-center">
+						<h3>We're still building Hello, Friend.</h3>
+						<p className="lead">Leave your number to get early access.</p>
 						<NumberCaptureForm
-						 />
+						buttonType="primary"
+						/>						
 					</div>
 				</div>
 			</div>
