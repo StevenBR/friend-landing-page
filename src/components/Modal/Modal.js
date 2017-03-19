@@ -1,12 +1,20 @@
 import React, {Component} from 'react';
 import { NumberCaptureForm } from 'components';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {closeModal} from 'redux/modules/modal';
 
+@connect(
+	state => ({modalVisible: state.modalVisible}),
+	dispatch => bindActionCreators({closeModal}, dispatch))
 export default class Modal extends Component {
+	
+	
 	render () {
 		const styles = require ('./Modal.scss');
 		return (
 			<div className={styles.modal}>
-				<i className="fa fa-times"></i>
+				<i className="fa fa-times" onClick={this.props.closeModal}></i>
 				<div className={"panel panel-default " + styles.modalBox}>
 					<div className="panel-body text-center">
 						<h3>We're still building Hello, Friend.</h3>

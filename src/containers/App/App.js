@@ -29,7 +29,8 @@ import {Modal} from 'components';
   }
 }])
 @connect(
-  state => ({user: state.auth.user}),
+  state => ({user: state.auth.user, modalVisible: state.modal.modalVisible}),
+  // state => ({modal.modalVisible: state.modal.modalVisible}),
   {logout, pushState: push})
 export default class App extends Component {
   static propTypes = {
@@ -116,7 +117,7 @@ export default class App extends Component {
               </LinkContainer>
               <LinkContainer to="/about">
                 <NavItem eventKey={5}>Blog</NavItem>
-              </LinkContainer>
+              </LinkContainer>                
             </Nav>
             {user &&
             <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
@@ -127,7 +128,7 @@ export default class App extends Component {
           {this.props.children}
         </div>
 
-        <Modal />
+        {this.props.modalVisible && <Modal />}
 
       </div>
     );
