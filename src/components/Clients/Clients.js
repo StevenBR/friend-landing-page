@@ -30,7 +30,7 @@ export default class Clients extends Component {
 
 		return (
 			<div className={styles.clients + " text-center"}>
-				<h3 className="">We're also on</h3>
+				<h3 className="">We're also coming to</h3>
 				<ul className="list-inline">
 					{				
 						this.state.clients.map(client => (

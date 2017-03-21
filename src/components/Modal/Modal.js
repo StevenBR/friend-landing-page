@@ -8,14 +8,16 @@ import {closeModal} from 'redux/modules/modal';
 	state => ({modalInfo: state.modal.modalInfo}),
 	dispatch => bindActionCreators({closeModal}, dispatch))
 export default class Modal extends Component {
-	
+	preventBubbling = (event) => {
+		event.stopPropagation();		
+	}
 	
 	render () {
 		const styles = require ('./Modal.scss');
 		return (
-			<div className={styles.modal}>
-				<i className="fa fa-times" onClick={this.props.closeModal}></i>
-				<div className={"panel panel-default " + styles.modalBox}>
+			<div className={styles.modal} onClick={this.props.closeModal}>
+				<i className="fa fa-times"></i>
+				<div className={"panel panel-default " + styles.modalBox} onClick={this.preventBubbling}>
 					<div className="panel-body text-center">
 						<h3>We're still building {this.props.modalInfo.label}</h3>
 						<p className="lead">Leave your number to get early access.</p>
