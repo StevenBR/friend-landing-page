@@ -11,6 +11,8 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
+import {Modal} from 'components';
+
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -27,7 +29,8 @@ import { asyncConnect } from 'redux-async-connect';
   }
 }])
 @connect(
-  state => ({user: state.auth.user}),
+  state => ({user: state.auth.user, modalVisible: state.modal.modalVisible}),
+  // state => ({modal.modalVisible: state.modal.modalVisible}),
   {logout, pushState: push})
 export default class App extends Component {
   static propTypes = {
@@ -114,7 +117,7 @@ export default class App extends Component {
               </LinkContainer>
               <LinkContainer to="/about">
                 <NavItem eventKey={5}>Blog</NavItem>
-              </LinkContainer>
+              </LinkContainer>                
             </Nav>
             {user &&
             <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
@@ -124,6 +127,9 @@ export default class App extends Component {
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+
+        {this.props.modalVisible && <Modal />}
+
       </div>
     );
   }

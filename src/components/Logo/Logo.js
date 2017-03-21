@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {showModal} from 'redux/modules/modal';
 
+@connect (
+	state => ({
+		modalVisible: state.modalVisible
+	}),
+	dispatch => bindActionCreators({showModal},dispatch))
 export default class Logo extends Component {
-	state = {
-		displayModal: false
-	}
 
 	showModal = () => {
-		this.state.displayModal = true;
+		// console.log(this.props.label);
+		this.props.showModal(this.props);
 	}
-
+	
 	render () {
 		const styles = require ("./Logo.scss");
 		return (
