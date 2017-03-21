@@ -9,11 +9,16 @@ import {showModal} from 'redux/modules/modal';
 	}),
 	dispatch => bindActionCreators({showModal},dispatch))
 export default class Logo extends Component {
+
+	showModal = () => {
+		// console.log(this.props.label);
+		this.props.showModal(this.props);
+	}
 	
 	render () {
 		const styles = require ("./Logo.scss");
 		return (
-			<div className={`${styles.logo} ${this.props.noFilter?styles.noFilter:""} col-sm-3`} onClick={this.props.showModal}>
+			<div className={`${styles.logo} ${this.props.noFilter?styles.noFilter:""} col-sm-3`} onClick={this.showModal}>
 	  			<div className="text-center">
 	  				<img src={this.props.src} alt="" className="" />
 	  				<br />

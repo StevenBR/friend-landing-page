@@ -11,7 +11,8 @@ export default function reducer (state = initialState, action = {}) {
 		case SHOW_MODAL:
 
 			return {
-				modalVisible: true
+				modalVisible: true,
+				modalInfo: action.payload
 			}
 		case CLOSE_MODAL:
 			return {
@@ -22,10 +23,12 @@ export default function reducer (state = initialState, action = {}) {
 	}
 }
 
-export function showModal () {
+export function showModal (info) {
+	// alert(info.label);
 	return {
-		type: SHOW_MODAL
-		}
+		type: SHOW_MODAL,
+		payload: info
+	}
 }
 
 export function closeModal () {

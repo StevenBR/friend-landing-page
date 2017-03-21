@@ -5,7 +5,7 @@ import {bindActionCreators} from 'redux';
 import {closeModal} from 'redux/modules/modal';
 
 @connect(
-	state => ({modalVisible: state.modalVisible}),
+	state => ({modalInfo: state.modal.modalInfo}),
 	dispatch => bindActionCreators({closeModal}, dispatch))
 export default class Modal extends Component {
 	
@@ -17,7 +17,7 @@ export default class Modal extends Component {
 				<i className="fa fa-times" onClick={this.props.closeModal}></i>
 				<div className={"panel panel-default " + styles.modalBox}>
 					<div className="panel-body text-center">
-						<h3>We're still building Hello, Friend.</h3>
+						<h3>We're still building {this.props.modalInfo.label}</h3>
 						<p className="lead">Leave your number to get early access.</p>
 						<NumberCaptureForm
 						buttonType="primary"
