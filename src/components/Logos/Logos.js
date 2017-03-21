@@ -15,31 +15,41 @@ export default class Logos extends Component {
 				id: 1,
 				src: Friend,
 				label: "Hello, Friend",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				noFilter: true
+				
 			},
 			{
 				id: 2,
 				src: Auto,
 				label: "Hello, Auto",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				noFilter: true
+				
 			},
 			{
 				id: 3,
 				src: Home,
 				label: "Hello, Home",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				noFilter: true
+				
 			},
 			{
 				id: 4,
 				src: Lingo,
 				label: "Hello, Lingo",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				noFilter: true
+				
 			},
 			{
 				id: 5,
 				src: Fitness,
 				label: "Hello, Fitness",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac."
+				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				noFilter: true
+				
 			},
 			{
 				id: 6,
