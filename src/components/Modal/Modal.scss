@@ -1,0 +1,22 @@
+.modal {
+	position: fixed;
+	background: rgba(247, 247, 247, 0.8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+	i {
+		font-size: 30px;
+		padding: 25px;
+		color: gray;
+		cursor: pointer;
+	}
+
+	.modalBox {		
+		max-width: 800px;
+		margin: auto;
+		padding-bottom: 20px;
+	}
+}
