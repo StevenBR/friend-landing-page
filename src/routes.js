@@ -13,7 +13,9 @@ import {
     NotFound,
     Pagination,
     Hello,
-    Terms
+    Terms,
+    PrivacyPolicy,
+    Faq
   } from 'containers';
 
 export default (store) => {
@@ -49,7 +51,10 @@ export default (store) => {
       </Route>
 
       { /* Routes */ }
-      <Route path="terms-conditions" component={Terms}></Route>
+      <Route path="about" component={About}></Route>
+      <Route path="faq" component={Faq}></Route>
+      <Route path="terms-service" component={Terms}></Route>
+      <Route path="privacy-policy" component={PrivacyPolicy}></Route>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />

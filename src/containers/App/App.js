@@ -109,9 +109,12 @@ export default class App extends Component {
                 </NavItem>
               </LinkContainer>}
             */}
-              <LinkContainer to="/terms-conditions">
-                <NavItem eventKey={1}>Terms and Conditions</NavItem>
+              <LinkContainer to="/about">
+                <NavItem eventKey={1}>About Us</NavItem>
               </LinkContainer>
+              <LinkContainer to="/faq">
+                <NavItem eventKey={2}>FAQ</NavItem>
+              </LinkContainer>              
             </Nav>
             {user &&
             <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
