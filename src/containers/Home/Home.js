@@ -25,7 +25,7 @@ export default class Home extends Component {
 		  <br />
 		  <div className="text-center">
 			  <h2>Welcome to Conversational Everything</h2>
-			  <p className="lead">We’re building the tools to allow you to communicate with businesses, experts<br /> and organizations in the easiest way possible.</p>
+			  <p className="lead">A whole new wave of experiences is here. Frictionless service on messaging channels you prefer.<br/> Connect to experts, services and organizations in the easiest way possible.</p>
 		  </div>
 		  <br />
 		  <Logos />
@@ -35,20 +35,18 @@ export default class Home extends Component {
 		  <FeatureImage 
 		  src={ImageOne}
 		  title="No More Apps. No More Swiping."
-		  subtitle="Conversational commerce is growing, and personal, concierge-style services are becoming the most personal way people will transact on their mobile devices." />
+		  subtitle="Conversational commerce is here to stay. Personal, concierge-style services are the easiest and most personal way to complete a transaction on your mobile device. If you need it, we can build it." />
 
 		  <FeatureImage 
 		  src={ImageTwo} 
 		  offset={true}
 		  title="Connect to Services You Need. Faster."
-		  subtitle="Forget 9,630,000 results in 0.59 seconds. Sometimes people need just one answer: the best answer. This answer should be instant, like a Friend." />
+		  subtitle="Search engines can give you millions of results in less than a second. While that’s cool, our technology provides you with the most helpful, personal answer, like a friend. Simple messaging epxeriences without third-party ads or spam." />
 
 		  <FeatureImage 
 		  src={ImageThree}
 		  title="Smart. Innovative. Personal."
-		  subtitle="Turkey pig pork corned beef, shankle fatback doner salami pork belly capicola ground round short loin t-bo" />	
-
-		  <Footer />
+		  subtitle="Send a message for simple or complex tasks. From online research, to shopping to storing something for later. Our expert team, combined with complex AI and natural language understanding can help get you the best answer the moment you need it, like a Friend." />
 
       </div>
     );

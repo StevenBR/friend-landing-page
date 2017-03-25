@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Slack from "../../../static/slack.png";
 import WhatsApp from "../../../static/whatsapp.png";
 import Messenger from "../../../static/messenger.png";
+import Sms from "../../../static/sms.png";
 
 export default class Clients extends Component {
 	
@@ -21,6 +22,11 @@ export default class Clients extends Component {
 				id: 3,
 				company: "Facebook Messenger",
 				src: Messenger
+			},
+			{
+				id: 4,
+				company: "SMS",
+				src: Sms
 			}
 		]
 	}
@@ -30,7 +36,7 @@ export default class Clients extends Component {
 
 		return (
 			<div className={styles.clients + " text-center"}>
-				<h3 className="">We're also coming to</h3>
+				<h3 className="">Available on</h3>
 				<ul className="list-inline">
 					{				
 						this.state.clients.map(client => (
