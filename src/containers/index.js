@@ -9,3 +9,6 @@ export Survey from './Survey/Survey';
 export NotFound from './NotFound/NotFound';
 export Pagination from './Pagination/Pagination';
 export Hello from './Hello/Hello';
+export Terms from './Terms/Terms';
+export PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
+export Faq from './Faq/Faq';

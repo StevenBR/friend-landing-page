@@ -11,7 +11,7 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
-import {Modal} from 'components';
+import {Modal, Footer} from 'components';
 
 
 @asyncConnect([{
@@ -110,14 +110,11 @@ export default class App extends Component {
               </LinkContainer>}
             */}
               <LinkContainer to="/about">
-                <NavItem eventKey={5}>About Us</NavItem>
+                <NavItem eventKey={1}>About Us</NavItem>
               </LinkContainer>
-              <LinkContainer to="/about">
-                <NavItem eventKey={5}>Help</NavItem>
-              </LinkContainer>
-              <LinkContainer to="/about">
-                <NavItem eventKey={5}>Blog</NavItem>
-              </LinkContainer>                
+              <LinkContainer to="/faq">
+                <NavItem eventKey={2}>FAQ</NavItem>
+              </LinkContainer>              
             </Nav>
             {user &&
             <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
@@ -127,6 +124,8 @@ export default class App extends Component {
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+
+        <Footer />
 
         {this.props.modalVisible && <Modal />}
 
