@@ -14,40 +14,40 @@ export default class Logos extends Component {
 			{
 				id: 1,
 				src: Friend,
-				label: "Hello, Friend",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				label: "Friend",
+				text: "A personal, friendly digital assistant to help you with your daily questions.",
 				noFilter: true
 				
 			},
 			{
 				id: 2,
 				src: Auto,
-				label: "Hello, Auto",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				label: "AutoBuddy",
+				text: "Instant auto expertise through text.",
 				noFilter: true
 				
 			},
 			{
 				id: 3,
 				src: Home,
-				label: "Hello, Home",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				label: "HomeTap",
+				text: "Control your home and appliances through messaging.",
 				noFilter: true
 				
 			},
 			{
 				id: 4,
 				src: Lingo,
-				label: "Hello, Lingo",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				label: "Lingo",
+				text: "Connect to a language expert through text.",
 				noFilter: true
 				
 			},
 			{
 				id: 5,
 				src: Fitness,
-				label: "Hello, Fitness",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				label: "GetFit",
+				text: "Get motivated by your personal trainer, through text.",
 				noFilter: true
 				
 			},
@@ -55,7 +55,7 @@ export default class Logos extends Component {
 				id: 6,
 				src: ComingSoon,
 				label: "Coming Soon",
-				text: "Phasellus condimentum odio elit, in placerat augue congue ac.",
+				text: "More bots and services on the way.",
 				noFilter: true
 			}
 		]

@@ -1,7 +1,7 @@
 .logo {
     margin-bottom: 40px;
-	padding-top: 10px;    
-	filter: grayscale(100%);
+	padding-top: 10px;    	
+	height: 180px;
 
     label {
 		cursor: pointer;
@@ -14,17 +14,10 @@
 }
 
 .logo:hover {
-	cursor: pointer;    	
-	/*filter: none;*/
+	cursor: pointer;    		
 	background-color: #f1f1f1;
 	
 	label {
 		font-weight: bold;
 	}
-}
-
-.noFilter {
-	
-		filter: none;
-	
 }

@@ -9,8 +9,7 @@ export default class Hero extends Component {
 			  <div className="container">
 			    <div className="text-center">
 			      <h2>Next Generation Messaging</h2>
-			      <p className="lead">Square One Labs is building next generation messaging products. Be the first to<br/> try them before they launch. We'll text you.</p>
-			      <p>Enter your number to begin</p>
+			      <p className="lead">We’re a technology company building frictionless messaging products to help you access services you’ll love.<br/> Be the first to try them before they launch. We’ll text you.</p>
 			      <NumberCaptureForm buttonType="gradient" />
 			      <br />
 			      <p>or send a text to <b className="text-success">+1 650-600-9614</b></p>			      
