@@ -11,7 +11,7 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
-import {Modal} from 'components';
+import {Modal, Footer} from 'components';
 
 
 @asyncConnect([{
@@ -124,6 +124,8 @@ export default class App extends Component {
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+
+        <Footer />
 
         {this.props.modalVisible && <Modal />}
 

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class PrivacyPolicy extends Component {
 	render () {
 		return (
-			<div className="container">
+			<div className="container narrow-container">
 				<h1 className="text-center">Privacy Policy</h1>
 				<p>Below is our privacy policy for information on how we collect, use and disclose personally identifiable information from our users:</p>
 				<p>DEVICE USAGE TERMS AND CONDITIONS</p>

@@ -3,11 +3,11 @@ import React, {Component} from 'react';
 export default class Faq extends Component {
 	render () {
 		return (
-			<div className="container">
+			<div className="container narrow-container">
 				<h1 className="text-center">FAQ</h1>
 				<h4>How do I get started?</h4>
 				<p><span>Just sign up with your phone number and you&rsquo;ll receive a text message from one of our automated assistants for future product announcements. If you have questions, you can always message the number and one of our founding engineers will reply instantly. There is no cost to message Square One Labs and we will never spam you.</span></p>
-				<h4>How Doe Square One Products Make Money? </h4>
+				<h4>How Does Square One Products Make Money? </h4>
 				<p><span>It's completely free to chat with our chatbot services. When you have a more challenging question, we will reach out to our community of experts for your specific area of interest. &nbsp;</span></p>
 				<p><span>If you are looking for expert, 1:1 help, there is a small fee for the expert&rsquo;s time. We&rsquo;ll let you know the total price so you can confirm it before you are billed. There are no hidden fees. The first time you message a Square One Labs service, we'll ask for your credit card info, your address, etc. After that, we know who you are and everything is on autopilot from there. </span></p>
 				<h4>How do you guarantee that my credit card number is safe and secure?</h4>

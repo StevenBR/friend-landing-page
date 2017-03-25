@@ -46,9 +46,7 @@ export default class Home extends Component {
 		  <FeatureImage 
 		  src={ImageThree}
 		  title="Smart. Innovative. Personal."
-		  subtitle="Send a message for simple or complex tasks. From online research, to shopping to storing something for later. Our expert team, combined with complex AI and natural language understanding can help get you the best answer the moment you need it, like a Friend." />	
-
-		  <Footer />
+		  subtitle="Send a message for simple or complex tasks. From online research, to shopping to storing something for later. Our expert team, combined with complex AI and natural language understanding can help get you the best answer the moment you need it, like a Friend." />
 
       </div>
     );
