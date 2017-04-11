@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { Hero, Logos, Clients, FeatureImage, GradientRow, Footer } from 'components';
+import { Hero, Logos, Clients, FeatureImage, GradientRow, Footer, MessagesProcessed } from 'components';
 import TwilioLogo from '../../../static/twilio-logo.png';
 import ImageOne from "../../../static/device-row-1.png";
 import ImageTwo from "../../../static/device-row-2.png";
@@ -17,7 +17,7 @@ export default class Home extends Component {
         <Helmet title="Home"/>
         <Hero />
         <GradientRow>
-        	<h2>7,421,234</h2>
+        	<MessagesProcessed />
         	<p className="lead">Messages Processed</p>
         	<span>Powered by </span><img src={TwilioLogo} />
         </GradientRow>
