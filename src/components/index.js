@@ -21,3 +21,4 @@ export FeatureImageText from './FeatureImageText/FeatureImageText';
 export GradientRow from './GradientRow/GradientRow';
 export Footer from './Footer/Footer';
 export Modal from './Modal/Modal';
+export MessagesProcessed from './MessagesProcessed/MessagesProcessed';
