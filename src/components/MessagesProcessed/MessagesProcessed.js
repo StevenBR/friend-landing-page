@@ -10,6 +10,7 @@ export default class MessagesProcessed extends Component {
 
 	componentWillMount () {
 		this.props.getMessages(Messages.post());
+		console.log(this.props.messagesPromise);
 		console.log('Component WILL MOUNT!');		
 
 	}
