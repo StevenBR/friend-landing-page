@@ -8,11 +8,7 @@ import {Messages} from '../../helpers/MessagesApi';
 	dispatch => bindActionCreators({getMessages}, dispatch))
 export default class MessagesProcessed extends Component {		
 
-	// state = {}
-
 	componentWillMount () {
-	// runThis = () => {
-		// this.state.hoku = "hhooo";
 		this.props.getMessages(Messages.post());
 		console.log('Component WILL MOUNT!');		
 
@@ -21,7 +17,7 @@ export default class MessagesProcessed extends Component {
 	returnMessageCount = () => {
 		if (this.props.messagesPromise) {
 			let messageCount = this.props.messagesPromise.result * 2;
-			return (messageCount);
+			return (messageCount.toLocaleString());
 		}
 		return ('loading');
 	}
