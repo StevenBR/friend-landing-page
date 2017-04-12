@@ -1,19 +1,31 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {getMessages} from 'redux/modules/messagesProcessed';
+import {Messages} from '../../helpers/MessagesApi';
 
+@connect(state => ({messagesPromise: state.messagesProcessed.messagesPromise}),
+	dispatch => bindActionCreators({getMessages}, dispatch))
 export default class MessagesProcessed extends Component {		
 
-	state = {}
-
 	componentWillMount () {
+		this.props.getMessages(Messages.post());
 		console.log('Component WILL MOUNT!');		
-		this.state.hoku = "hhooo";
+
+	}
+
+	returnMessageCount = () => {
+		if (this.props.messagesPromise) {
+			let messageCount = this.props.messagesPromise.result * 2;
+			return (messageCount.toLocaleString());
+		}
+		return ('loading');
 	}
 
 	render () {
 		return (
-			<div>
-				<h2>1,234</h2>
-				<h5>{this.state.hoku}</h5>										
+			<div>				
+				<h2>{this.returnMessageCount()}</h2>
 			</div>
 		)
 	}
