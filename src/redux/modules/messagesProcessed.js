@@ -3,7 +3,6 @@ const GET_MESSAGES_PROCESSED = "GET_MESSAGES_PROCESSED";
 export default function reducer (state = {}, action) {
 	switch (action.type) {
 		case GET_MESSAGES_PROCESSED:
-			console.log(action.payload);
 			return {
 				...state,
 				messagesPromise: action.payload

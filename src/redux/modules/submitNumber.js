@@ -4,9 +4,10 @@ const SUBMISSION_FAILED = 'SUBMISSION_FAILED';
 
 export default function reducer (state={}, action) {
 	switch (action.payload) {
-		case INITIAL_SUBMIT:
+		case INITIAL_SUBMIT:			
 			return {
 				...state,
+				loading: true,
 				numberPromise: action.payload
 			}
 		default:
@@ -15,7 +16,7 @@ export default function reducer (state={}, action) {
 }
 
 export function submitNumber (payload) {
-	console.log(payload);
+	console.log('first',payload);
 	return {
 		type: INITIAL_SUBMIT,
 		payload
