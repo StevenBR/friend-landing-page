@@ -10,9 +10,6 @@ export default class MessagesProcessed extends Component {
 
 	componentWillMount () {
 		this.props.getMessages(Messages.post());
-		console.log(this.props.messagesPromise);
-		console.log('Component WILL MOUNT!');		
-
 	}
 
 	returnMessageCount = () => {
@@ -20,7 +17,7 @@ export default class MessagesProcessed extends Component {
 			let messageCount = this.props.messagesPromise.result * 2;
 			return (messageCount.toLocaleString());
 		}
-		return ('loading');
+		return ('counting...');
 	}
 
 	render () {
