@@ -1,12 +1,12 @@
-const LOAD = 'redux-example/LOAD';
-const LOAD_SUCCESS = 'redux-example/LOAD_SUCCESS';
-const LOAD_FAIL = 'redux-example/LOAD_FAIL';
+const LOAD = 'messages-processed/LOAD';
+const LOAD_SUCCESS = 'messages-processed/LOAD_SUCCESS';
+const LOAD_FAIL = 'messages-processed/LOAD_FAIL';
 
 const initialState = {
   loaded: false
 };
 
-export default function messages(state = initialState, action = {}) {
+export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case LOAD:
       return {

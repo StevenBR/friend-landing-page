@@ -13,7 +13,7 @@ export default class NumberCaptureForm extends Component {
 		// console.log('clicked button', this.refs.number.inputElement.value);
 		let submittedNumber = this.refs.number.inputElement.value;
 		let formattedNumber = submittedNumber.replace('(','').replace(')','').replace('-','').replace(' ','');
-		console.log( typeof formattedNumber);
+		// console.log( typeof formattedNumber);
 		this.props.submitNumber(PhoneNumber.post({"mobile":formattedNumber}));
 		this.refs.number.inputElement.value = "";
 	}
