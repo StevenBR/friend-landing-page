@@ -24,6 +24,7 @@ export default class Footer extends Component {
 						<LinkContainer to="/faq">
 							<li><a href="">FAQ</a></li>
 						</LinkContainer>
+							<li><a href="https://medium.com/square-one-labs">Blog</a></li>
 						<LinkContainer to="/terms-service">
 							<li><a href="">Terms of Service</a></li>
 						</LinkContainer>

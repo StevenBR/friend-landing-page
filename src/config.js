@@ -15,21 +15,21 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'React Redux Example',
-    description: 'All the modern best practices in one example.',
+    title: 'Square One Labs: Next Generation Messaging',
+    description: 'We’re a technology company building frictionless messaging products to help you access services you’ll love.',
     head: {
-      titleTemplate: 'React Redux Example: %s',
+      titleTemplate: 'Square One Labs: Next Generation Messaging- %s',
       meta: [
-        {name: 'description', content: 'All the modern best practices in one example.'},
+        {name: 'description', content: 'We’re a technology company building frictionless messaging products to help you access services you’ll love.'},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'React Redux Example'},
-        {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
+        {property: 'og:site_name', content: 'Square One Labs: Next Generation Messaging'},
+        {property: 'og:image', content: 'https://friend-landing-page-staging.herokuapp.com/logo.png'},
         {property: 'og:locale', content: 'en_US'},
-        {property: 'og:title', content: 'React Redux Example'},
-        {property: 'og:description', content: 'All the modern best practices in one example.'},
+        {property: 'og:title', content: 'Square One Labs: Next Generation Messaging'},
+        {property: 'og:description', content: 'We’re a technology company building frictionless messaging products to help you access services you’ll love.'},
         {property: 'og:card', content: 'summary'},
-        {property: 'og:site', content: '@erikras'},
-        {property: 'og:creator', content: '@erikras'},
+        {property: 'og:site', content: ''},
+        {property: 'og:creator', content: ''},
         {property: 'og:image:width', content: '200'},
         {property: 'og:image:height', content: '200'}
       ]
