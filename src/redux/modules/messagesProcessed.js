@@ -34,8 +34,7 @@ export default function info(state = initialState, action = {}) {
         ...state,
         loading: true
       };
-    case LOAD_SUCCESS:
-    	console.log(action.result);
+    case LOAD_SUCCESS:    	
       return {
         ...state,
         loading: false,
@@ -43,6 +42,7 @@ export default function info(state = initialState, action = {}) {
         data: action.result
       };
     case LOAD_FAIL:
+    	console.log('ho error',action.error);
       return {
         ...state,
         loading: false,
