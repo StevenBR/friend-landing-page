@@ -17,7 +17,6 @@ export default class MessagesProcessed extends Component {
 			let messageCount = this.props.data.body.result * 2;
 			return (messageCount.toLocaleString());
 		} else if (this.props.error) {
-			console.log('ku Error', this.props.error);
 			return "1,152";
 		}
 		return ('counting...');

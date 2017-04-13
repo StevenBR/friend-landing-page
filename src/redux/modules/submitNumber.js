@@ -14,7 +14,7 @@ export default function reducer(state = initialState, action = {}) {
         loading: true
       };
     case LOAD_SUCCESS: 
-    	console.log('ho success',action.result);   	
+    	// console.log('success',action.result);   	
       return {
         ...state,
         loading: false,
@@ -22,7 +22,7 @@ export default function reducer(state = initialState, action = {}) {
         data: action.result
       };
     case LOAD_FAIL:
-    	console.log('ho error',action.error);
+    	console.log('submit number error',action.error);
       return {
         ...state,
         loading: false,

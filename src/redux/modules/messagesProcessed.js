@@ -21,7 +21,7 @@ export default function reducer(state = initialState, action = {}) {
         data: action.result
       };
     case LOAD_FAIL:
-    	console.log('ho error',action.error);
+    	console.log('messages processed error',action.error);
       return {
         ...state,
         loading: false,
