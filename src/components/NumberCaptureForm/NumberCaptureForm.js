@@ -5,7 +5,10 @@ import MaskedInput from 'react-text-mask';
 export default class NumberCaptureForm extends Component {
 	submitNumber = (e) => {
 		e.preventDefault();
-		console.log('clicked button', this.refs.number);
+		// console.log('clicked button', this.refs.number.inputElement.value);
+		let submittedNumber = this.refs.number.inputElement.value;
+		let formattedNumber = submittedNumber.replace('(','').replace(')','').replace('-','').replace(' ','');
+		console.log(formattedNumber);
 	}
 
 	render () {
