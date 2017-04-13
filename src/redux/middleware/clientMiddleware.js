@@ -13,7 +13,7 @@ export default function clientMiddleware(client) {
       const [REQUEST, SUCCESS, FAILURE] = types;
       next({...rest, type: REQUEST});
 
-      const actionPromise = promise(client);
+      const actionPromise = promise;
       actionPromise.then(
         (result) => next({...rest, result, type: SUCCESS}),
         (error) => next({...rest, error, type: FAILURE})
