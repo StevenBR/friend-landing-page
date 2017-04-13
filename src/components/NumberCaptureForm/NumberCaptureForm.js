@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import MaskedInput from 'react-text-mask';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {submitNumber} from 'redux/modules/submitNumber';
+import {PhoneNumber} from 'helpers/PhoneNumberApi';
 
-
+@connect(null,
+	dispatch => bindActionCreators({submitNumber},dispatch))
 export default class NumberCaptureForm extends Component {
 	submitNumber = (e) => {
 		e.preventDefault();
 		// console.log('clicked button', this.refs.number.inputElement.value);
 		let submittedNumber = this.refs.number.inputElement.value;
 		let formattedNumber = submittedNumber.replace('(','').replace(')','').replace('-','').replace(' ','');
-		console.log(formattedNumber);
+		console.log( typeof formattedNumber);
+		this.props.submitNumber(PhoneNumber.post({"mobile":formattedNumber}));
+		this.refs.number.inputElement.value = "";
 	}
 
 	render () {
