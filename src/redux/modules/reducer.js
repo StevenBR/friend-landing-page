@@ -11,6 +11,7 @@ import info from './info';
 import widgets from './widgets';
 import modal from './modal.js';
 import messagesProcessed from './messagesProcessed';
+import submitNumber from './submitNumber';
 
 export default combineReducers({
   routing: routerReducer,
@@ -26,5 +27,6 @@ export default combineReducers({
   pagination,
   widgets,
   modal,
-  messagesProcessed
+  messagesProcessed,
+  submitNumber
 });

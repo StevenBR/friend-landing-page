@@ -1,6 +1,6 @@
-const LOAD = 'messages-processed/LOAD';
-const LOAD_SUCCESS = 'messages-processed/LOAD_SUCCESS';
-const LOAD_FAIL = 'messages-processed/LOAD_FAIL';
+const LOAD = 'submit-number/LOAD';
+const LOAD_SUCCESS = 'submit-number/LOAD_SUCCESS';
+const LOAD_FAIL = 'submit-number/LOAD_FAIL';
 
 const initialState = {
   loaded: false
@@ -13,7 +13,8 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         loading: true
       };
-    case LOAD_SUCCESS:    	
+    case LOAD_SUCCESS: 
+    	// console.log('success',action.result);   	
       return {
         ...state,
         loading: false,
@@ -21,7 +22,7 @@ export default function reducer(state = initialState, action = {}) {
         data: action.result
       };
     case LOAD_FAIL:
-    	console.log('messages processed error',action.error);
+    	console.log('submit number error',action.error);
       return {
         ...state,
         loading: false,
@@ -37,7 +38,7 @@ export default function reducer(state = initialState, action = {}) {
 //   return globalState.info && globalState.info.loaded;
 // }
 
-export function getMessages(promise) {
+export function submitNumber(promise) {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
     promise

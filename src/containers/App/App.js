@@ -18,12 +18,13 @@ import {Modal, Footer} from 'components';
   promise: ({store: {dispatch, getState}}) => {
     const promises = [];
 
-    if (!isInfoLoaded(getState())) {
-      promises.push(dispatch(loadInfo()));
-    }
-    if (!isAuthLoaded(getState())) {
-      promises.push(dispatch(loadAuth()));
-    }
+    // if (!isInfoLoaded(getState())) {
+    //   promises.push(dispatch(loadInfo()));
+    // }
+    
+    // if (!isAuthLoaded(getState())) {
+    //   promises.push(dispatch(loadAuth()));
+    // }
 
     return Promise.all(promises);
   }

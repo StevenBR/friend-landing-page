@@ -4,7 +4,7 @@ import {bindActionCreators} from 'redux';
 import {getMessages} from 'redux/modules/messagesProcessed';
 import {Messages} from '../../helpers/MessagesApi';
 
-@connect(state => ({messagesPromise: state.messagesProcessed.messagesPromise}),
+@connect(state => ({data: state.messagesProcessed.data, error: state.messagesProcessed.error}),
 	dispatch => bindActionCreators({getMessages}, dispatch))
 export default class MessagesProcessed extends Component {		
 
@@ -13,9 +13,11 @@ export default class MessagesProcessed extends Component {
 	}
 
 	returnMessageCount = () => {
-		if (this.props.messagesPromise) {
-			let messageCount = this.props.messagesPromise.result * 2;
+		if (this.props.data) {
+			let messageCount = this.props.data.body.result * 2;
 			return (messageCount.toLocaleString());
+		} else if (this.props.error) {
+			return "1,152";
 		}
 		return ('counting...');
 	}
