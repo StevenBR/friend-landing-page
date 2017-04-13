@@ -33,6 +33,10 @@ export default function messages(state = initialState, action = {}) {
   }
 }
 
+// export function isLoaded(globalState) {
+//   return globalState.info && globalState.info.loaded;
+// }
+
 export function getMessages(promise) {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],

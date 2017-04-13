@@ -14,21 +14,21 @@ import { asyncConnect } from 'redux-async-connect';
 import {Modal, Footer} from 'components';
 
 
-// @asyncConnect([{
-//   promise: ({store: {dispatch, getState}}) => {
-//     const promises = [];
+@asyncConnect([{
+  promise: ({store: {dispatch, getState}}) => {
+    const promises = [];
 
-//     if (!isInfoLoaded(getState())) {
-//       promises.push(dispatch(loadInfo()));
-//     }
+    // if (!isInfoLoaded(getState())) {
+    //   promises.push(dispatch(loadInfo()));
+    // }
     
-//     if (!isAuthLoaded(getState())) {
-//       promises.push(dispatch(loadAuth()));
-//     }
+    // if (!isAuthLoaded(getState())) {
+    //   promises.push(dispatch(loadAuth()));
+    // }
 
-//     return Promise.all(promises);
-//   }
-// }])
+    return Promise.all(promises);
+  }
+}])
 @connect(
   state => ({user: state.auth.user, modalVisible: state.modal.modalVisible}),
   // state => ({modal.modalVisible: state.modal.modalVisible}),
