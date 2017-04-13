@@ -1,24 +1,3 @@
-// const GET_MESSAGES_PROCESSED = "GET_MESSAGES_PROCESSED";
-
-// export default function reducer (state = {}, action) {
-// 	switch (action.type) {
-// 		case GET_MESSAGES_PROCESSED:
-// 			return {
-// 				...state,
-// 				messagesPromise: action.payload
-// 			}
-// 		default:
-// 			return state;
-// 	}
-// }
-
-// export function getMessages (payload) {
-// 	return {
-// 		type: GET_MESSAGES_PROCESSED,
-// 		payload
-// 	}
-// }
-
 const LOAD = 'redux-example/LOAD';
 const LOAD_SUCCESS = 'redux-example/LOAD_SUCCESS';
 const LOAD_FAIL = 'redux-example/LOAD_FAIL';
@@ -27,7 +6,7 @@ const initialState = {
   loaded: false
 };
 
-export default function info(state = initialState, action = {}) {
+export default function messages(state = initialState, action = {}) {
   switch (action.type) {
     case LOAD:
       return {
@@ -52,10 +31,6 @@ export default function info(state = initialState, action = {}) {
     default:
       return state;
   }
-}
-
-export function isLoaded(globalState) {
-  return globalState.info && globalState.info.loaded;
 }
 
 export function getMessages(promise) {
