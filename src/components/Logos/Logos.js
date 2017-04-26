@@ -8,11 +8,11 @@ import { Logo } from 'components';
 // import Fitness from '../../../static/fitness.png';
 
 import ComingSoon from '../../../static/coming-soon.svg';
-import Auto from '../../../static/service-icons/autobuddy.svg';
-import Friend from '../../../static/service-icons/friend.svg';
-import Home from '../../../static/service-icons/home-tap.svg';
-import Lingo from '../../../static/service-icons/lingo.svg';
-import Fitness from '../../../static/service-icons/get-fit.svg';
+import Auto from '../../../static/autobuddy.svg';
+import Friend from '../../../static/friend.svg';
+import Home from '../../../static/home-tap.svg';
+import Lingo from '../../../static/lingo.svg';
+import Fitness from '../../../static/get-fit.svg';
 
 export default class Logos extends Component {
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {GradientRow,NumberCaptureForm} from 'components';
 import {LinkContainer} from 'react-router-bootstrap';
-import Logo from '../../../static/logos/logo.svg';
+import Logo from '../../../static/logo.svg';
 
 export default class Footer extends Component {
 	render () {
