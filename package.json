@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/erikras/react-redux-universal-hot-example"
   },
+  "engines": {
+    "node": "v6.9.2"
+  },
   "homepage": "https://github.com/erikras/react-redux-universal-hot-example",
   "keywords": [
     "react",
