@@ -7,7 +7,7 @@ import { Logo } from 'components';
 // import Lingo from '../../../static/lingo.png';
 // import Fitness from '../../../static/fitness.png';
 
-import ComingSoon from '../../../static/service-icons/coming-soon.svg';
+import ComingSoon from '../../../static/coming-soon.svg';
 import Auto from '../../../static/service-icons/autobuddy.svg';
 import Friend from '../../../static/service-icons/friend.svg';
 import Home from '../../../static/service-icons/home-tap.svg';
