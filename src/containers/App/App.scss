@@ -1,17 +1,16 @@
 .app {
   .brand {
     position: absolute;
-    $size: 40px;
-    top: 5px;
-    left: 5px;
+    $size: 38px;
+    top: 0px;
+    left: 0px;
     display: inline-block;
     /*background: url('../Home/squareonelabs_logo.png') no-repeat center center;*/
-    background: url('../../../static/squareonelabs-logo-3.png') no-repeat center center;
-    width: $size;
+    background: url('../../../static/logos/Logo.svg') no-repeat center center;
+    width: $size * 5.5;
     height: $size;
-    background-size: 80%;
-    margin: 0 10px 0 0;
-    border-radius: $size / 2;
+    background-size: 100%;
+    margin: 0;
   }
   nav :global(.fa) {
     font-size: 2em;

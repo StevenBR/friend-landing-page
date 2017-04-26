@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {GradientRow,NumberCaptureForm} from 'components';
 import {LinkContainer} from 'react-router-bootstrap';
-import Logo from '../../../static/squareonelabs-logo-3-light.png';
+import Logo from '../../../static/logos/logo.svg';
 
 export default class Footer extends Component {
 	render () {
@@ -13,7 +13,7 @@ export default class Footer extends Component {
 					<br/>
 					<NumberCaptureForm buttonType="primary" />
 					<br/>
-					<img src={Logo} alt="" style={{filter: "grayscale(100%)"}} height="40px" />
+					<img src={Logo} alt="" />
 					<br/>
 					<br/>
 					<ul className="list-inline">						

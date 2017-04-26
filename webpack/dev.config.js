@@ -4,7 +4,7 @@ require('babel-polyfill');
 var fs = require('fs');
 var path = require('path');
 var webpack = require('webpack');
-var assetsPath = path.resolve(__dirname, '../static/dist');
+var assetsPath = path.resolve(__dirname, '../static/');
 var host = (process.env.HOST || 'localhost');
 var port = (+process.env.PORT + 1) || 3001;
 
@@ -73,7 +73,7 @@ module.exports = {
     ]
   },
   output: {
-    path: assetsPath,
+    path: assetsPath + "/dist/",
     filename: '[name]-[hash].js',
     chunkFilename: '[name]-[chunkhash].js',
     publicPath: 'http://' + host + ':' + port + '/dist/'

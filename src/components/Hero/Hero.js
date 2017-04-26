@@ -14,7 +14,10 @@ export default class Hero extends Component {
 			      <br />
 			      <p>or send a text to <b className="text-success">+1 650-600-9614</b></p>			      
 			    </div>
-		      	<div className={styles.device}></div>
+
+		      <div className={styles.device}>
+						{/*<img src="chat.gif" alt="chat_gif" className={styles.chat_gif}/>*/}
+					</div>
 			  </div>
 			  
 			</div>

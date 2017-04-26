@@ -35,18 +35,18 @@ export default class Home extends Component {
 		  <FeatureImage 
 		  src={ImageOne}
 		  title="No More Apps. No More Swiping."
-		  subtitle="Conversational commerce is here to stay. Personal, concierge-style services are the easiest and most personal way to complete a transaction on your mobile device. If you need it, we can build it." />
+		  subtitle="Conversational commerce is here to stay. Personal, concierge-style services are the easiest and most personal way to complete a transaction on your mobile device. Whatever you need, we’re here to help." />
 
 		  <FeatureImage 
 		  src={ImageTwo} 
 		  offset={true}
 		  title="Connect to Services You Need. Faster."
-		  subtitle="Search engines can give you millions of results in less than a second. While that’s cool, our technology provides you with the most helpful, personal answer, like a friend. Simple messaging epxeriences without third-party ads or spam." />
+		  subtitle="Search engines can give you millions of results in less than a second. While that’s cool, our technology provides you with the most helpful, personal answer. It’s like texting a friend. Simple messaging experiences without third-party ads or spam." />
 
 		  <FeatureImage 
 		  src={ImageThree}
 		  title="Smart. Innovative. Personal."
-		  subtitle="Send a message for simple or complex tasks. From online research, to shopping to storing something for later. Our expert team, combined with complex AI and natural language understanding can help get you the best answer the moment you need it, like a Friend." />
+		  subtitle="Send a message for simple or complex tasks. From online research to shopping to storing something for later,our expert team, combined with complex AI and natural language understanding, can help get you the best answer the moment you need it. Meet your new best friend." />
 
       </div>
     );

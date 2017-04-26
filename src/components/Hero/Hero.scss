@@ -1,9 +1,22 @@
 .hero {
 	.device {
+		display: flex;
 		height: 400px;
 		background: url("../../../static/hero-device.png") no-repeat center bottom;
+		justify-content: center;
 	}
+	.chat_gif {
+	/* 
+		should be relative, top and z-index adjustment but the image has text bubbles that overlap the gif.
+		convert hero-device and remove the chat bubbles so you can overlay the gif.
+	*/
+		// position: relative;
+		// z-index: 0;
+		//top: 122px;
 
+		padding-top: 122px;
+		width: 262px;
+	}
 	
 }
 

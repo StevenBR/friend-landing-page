@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="271px" height="271px" viewbox="0 0 271 271" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+        <defs>
+        <linearGradient x1="95.6011075%" y1="95.5056118%" x2="3.34349696%" y2="3.34015715%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF"></stop>
+            <stop stop-color="#FFFFFF"></stop>
+        </linearGradient>
+    </defs>
+    <g>
+        <path d="M36.3217073,268.397819 L248.416342,268.397819 C259.460008,268.397819 268.412669,259.448584 268.412669,248.388911 L268.412669,20.0089072 C268.412669,8.95829292 259.462939,0 248.416342,0 L19.9963268,0 C8.95266047,0 -2.27373675e-13,8.94923443 -2.27373675e-13,20.0089072 L-2.27373675e-13,102.306933 L36.3217073,102.306933 L90.3129685,156.279156 L64.4224211,182.168271 L36.3217073,154.069112 L36.3217073,268.397819 Z" id="Combined-Shape" fill="url(#linearGradient-1)" transform="translate(134.206334, 134.198909) scale(-1, 1) translate(-134.206334, -134.198909)"></path>
+    </g>
+</svg>

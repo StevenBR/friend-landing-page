@@ -22,7 +22,6 @@ export default class Logo extends Component {
 	  			<div className="text-center">
 	  				<img src={this.props.src} alt="" className="" />
 	  				<br />
-	  				<label>{this.props.label}</label>
 	  				<p className="small">{this.props.text}</p>
 	  			</div>
 			</div>

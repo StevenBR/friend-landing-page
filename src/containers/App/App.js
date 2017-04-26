@@ -72,7 +72,6 @@ export default class App extends Component {
             <Navbar.Brand>
               <IndexLink to="/">
                 <div className={styles.brand}/>
-                <b>squareonelabs</b>
               </IndexLink>
             </Navbar.Brand>
             <Navbar.Toggle/>

@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { Logo } from 'components';
-import ComingSoon from '../../../static/coming-soon.png';
-import Auto from '../../../static/auto.png';
-import Friend from '../../../static/friend.png';
-import Home from '../../../static/home.png';
-import Lingo from '../../../static/lingo.png';
-import Fitness from '../../../static/fitness.png';
+// import ComingSoon from '../../../static/coming-soon.png';
+// import Auto from '../../../static/auto.png';
+// import Friend from '../../../static/friend.png';
+// import Home from '../../../static/home.png';
+// import Lingo from '../../../static/lingo.png';
+// import Fitness from '../../../static/fitness.png';
+
+import ComingSoon from '../../../static/service-icons/coming-soon.svg';
+import Auto from '../../../static/service-icons/autobuddy.svg';
+import Friend from '../../../static/service-icons/friend.svg';
+import Home from '../../../static/service-icons/home-tap.svg';
+import Lingo from '../../../static/service-icons/lingo.svg';
+import Fitness from '../../../static/service-icons/get-fit.svg';
 
 export default class Logos extends Component {
 
@@ -15,7 +22,7 @@ export default class Logos extends Component {
 				id: 1,
 				src: Friend,
 				label: "Friend",
-				text: "A personal, friendly digital assistant to help you with your daily questions.",
+				text: "A personal, friendly digital assistant to answer your daily questions.",
 				noFilter: true
 				
 			},
