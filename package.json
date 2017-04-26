@@ -84,8 +84,7 @@
     "build": {
       "command": "webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
       "env": {
-        "NODE_ENV": "production",
-        "NPM_CONFIG_PRODUCTION": "false"
+        "NODE_ENV": "production"
       }
     }
   },
